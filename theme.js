@@ -10,8 +10,10 @@
 // @include       https://*.blogtruyen.com/*
 // @include       http://id.blogtruyen.com*
 // @run-at        document-start
-// @version       1.2
+// @version       1.3
 // ==/UserScript==
+
+
 (function() {var css = "";
 if (false || (document.domain == "blogtruyen.com" || document.domain.substring(document.domain.indexOf(".blogtruyen.com") + 1) == "blogtruyen.com"))
 	css += [
@@ -274,7 +276,7 @@ if (false || (document.domain == "blogtruyen.com" || document.domain.substring(d
 		"    background: #ffffff;",
 		"}",
 		"article#content img:first-child:hover {",
-		"    content: url(http://farm5.staticflickr.com/4585/38480158626_4f540b87be_o.jpg);",
+		"    content: url(http://www.ani-vn.com/img/credit.jpg);",
 		"}",
 		"#readonline .breadcrumbs a:first-child span:first-child {",
 		"    padding: 6px 6px 6px 6px;",
