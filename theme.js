@@ -19,6 +19,11 @@ if (false || (document.domain == "blogtruyen.com" || document.domain.substring(d
 		"    background: #6e7274 url(http://farm5.staticflickr.com/4216/35079800750_f3b86d6449_o.jpg) center top fixed repeat;",
 		"    background-size: cover !important;",
 		"}",
+		"body#tinymce {",
+		"    color: #fff;",
+		"    background: #fff url(http://farm5.staticflickr.com/4585/38480158626_4f540b87be_o.jpg) center top fixed repeat;",
+		"    background-size: cover !important;",
+		"}",
 		"a[style] {",
 		"    display: none;",
 		"}",
@@ -231,11 +236,6 @@ if (false || (document.domain == "blogtruyen.com" || document.domain.substring(d
 		"    border: 0 solid rgba(0, 0, 0, .2);",
 		"    background-color: rgba(255, 255, 255, 0.07);",
 		"}",
-		"body#tinymce {",
-		"    color: #fff;",
-		"    background: #fff url(http://farm5.staticflickr.com/4585/38480158626_4f540b87be_o.jpg) center top fixed repeat;",
-		"    background-size: cover !important;",
-		"}",
 		"div#sticky {",
 		"    display: none;",
 		"}",
@@ -250,18 +250,17 @@ if (false || (document.domain == "blogtruyen.com" || document.domain.substring(d
 		"    height: 58px;",
 		"    width: 58px;",
 		"}",
-		"iframe[src*=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fblogtruyen.page%2F&tabs=timeline%2Cmessages&width=300&height=1200&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1092402354157500\"] {",
+		"iframe[src*=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fblogtruyen.page%2F&tabs=timeline%2Cmessages&width=280&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1092402354157500\"] {",
 		"    display: none;",
 		"}",
-		"div.fb-comments.fb_iframe_widget {",
-		"    width: 565px !important;",
-		"}",
 		"section.bg-white.comments {",
-		"    width: 635px !important;",
+		"    width: 655px !important;",
+		"    height: 1100px;",
 		"    border-left: 5px solid #50ceff !important;",
 		"    border-right: 5px solid #4fceff !important;",
 		"}",
 		"section div span iframe {",
+		"    ",
 		"    width: 540px !important;",
 		"}",
 		"h3.bold.fs-16 {",
@@ -454,6 +453,7 @@ if (typeof GM_addStyle != "undefined") {
 	}
 }
 })();
+
 
 setInterval(function(){
     var tiptip = document.getElementsByClassName('tiptip');
