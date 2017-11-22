@@ -254,12 +254,18 @@ if (false || (document.domain == "blogtruyen.com" || document.domain.substring(d
 		"    display: none;",
 		"}",
 		"section.bg-white.comments {",
-		"    width: 1200px !important;",
+		"    width: 620px !important;",
 		"    border-left: 5px solid #50ceff !important;",
 		"    border-right: 5px solid #4fceff !important;",
 		"}",
-		"section div span iframe {",
-		"    width: 1200px !important;",
+		"body section div:nth-child(1) iframe:nth-child(1) {",
+		"    display: none;",
+		"}",
+		"div.fb-comments.fb_iframe_widget {",
+		"    width: 580px !important;",
+		"}",
+		".fb_iframe_widget iframe {",
+		"    width: 560px !important;",
 		"}",
 		"h3.bold.fs-16 {",
 		"    color: white;",
@@ -295,6 +301,11 @@ if (false || (document.domain == "blogtruyen.com" || document.domain.substring(d
 		"}",
 		"#readonline .breadcrumbs {",
 		"    color: #fff;",
+		"}",
+		"#copyright, #copyright a {",
+		"    color: #fff;",
+		"    font-size: 12px;",
+		"    display: none;",
 		"}",
 		"#readonline h1 {",
 		"    font-size: 25px;",
@@ -451,6 +462,7 @@ if (typeof GM_addStyle != "undefined") {
 	}
 }
 })();
+
 
 setInterval(function(){
     var tiptip = document.getElementsByClassName('tiptip');
