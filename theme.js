@@ -254,14 +254,12 @@ if (false || (document.domain == "blogtruyen.com" || document.domain.substring(d
 		"    display: none;",
 		"}",
 		"section.bg-white.comments {",
-		"    width: 655px !important;",
-		"    height: 1100px;",
+		"    width: 1200px !important;",
 		"    border-left: 5px solid #50ceff !important;",
 		"    border-right: 5px solid #4fceff !important;",
 		"}",
 		"section div span iframe {",
-		"    ",
-		"    width: 540px !important;",
+		"    width: 1200px !important;",
 		"}",
 		"h3.bold.fs-16 {",
 		"    color: white;",
@@ -453,7 +451,6 @@ if (typeof GM_addStyle != "undefined") {
 	}
 }
 })();
-
 
 setInterval(function(){
     var tiptip = document.getElementsByClassName('tiptip');
