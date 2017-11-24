@@ -19,7 +19,7 @@
 // @compatible  chrome
 // @compatible  firefox
 // @license     The MIT License (MIT); http://opensource.org/licenses/MIT
-// @version       1.4
+// @version       1.6
 // ==/UserScript==
 
 //==========     Bắt đầu css   ==============
