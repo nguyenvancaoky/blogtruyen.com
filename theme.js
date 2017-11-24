@@ -4,6 +4,7 @@
 // @description	  Design bởi Nguyễn Văn Cao Kỳ
 // @author        Ani - VN
 // @homepage      http://ani-vn.com
+// @icon          http://www.ani-vn.com/favicon.ico
 // @include       http://blogtruyen.com/*
 // @include       https://blogtruyen.com/*
 // @include       http://*.blogtruyen.com/*
