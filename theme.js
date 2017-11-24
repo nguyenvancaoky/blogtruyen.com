@@ -1,14 +1,15 @@
 // ==UserScript==
 // @name          Blogtruyen.com
-// @namespace     http://userstyles.org
-// @description	  Tạo bởi  Nguyễn Văn Cao Kỳ
+// @namespace     http://ani-vn.com
+// @description	  Design bởi Nguyễn Văn Cao Kỳ
 // @author        Ani - VN
-// @homepage      https://userstyles.org/styles/144396
+// @homepage      http://ani-vn.com
 // @include       http://blogtruyen.com/*
 // @include       https://blogtruyen.com/*
 // @include       http://*.blogtruyen.com/*
 // @include       https://*.blogtruyen.com/*
 // @include       http://id.blogtruyen.com*
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @grant       GM_addStyle
 // @grant       GM_getValue
 // @grant       GM_setValue
@@ -18,13 +19,105 @@
 // @compatible  chrome
 // @compatible  firefox
 // @license     The MIT License (MIT); http://opensource.org/licenses/MIT
-// @version       1.3
+// @version       1.4
 // ==/UserScript==
 
+//==========     Bắt đầu css   ==============
 
 (function() {var css = "";
              if (false || (document.domain == "blogtruyen.com" || document.domain.substring(document.domain.indexOf(".blogtruyen.com") + 1) == "blogtruyen.com"))
                  css += [
+
+
+
+
+
+                     "a.color-u-1.nguyenvancaoky",
+                     "{",
+                     "    padding: 6px 6px 6px 6px !important;",
+                     "    text-decoration: none;",
+                     "    border: none !important;",
+                     "    border-radius: 3px !important;",
+                     "    box-shadow: 6px 6px 25px -6px #3AA17E !important;",
+                     "    background: linear-gradient(141deg, #662D8C 0, #ED1E79 75%) !important;",
+                     "    transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity;",
+                     "    color: white !important;",
+                     "}",
+                     "#mota {",
+                     "    font-size: 10px !important;",
+                     "    line-height: 50px !important;",
+                     "    margin: 20px !important;",
+                     "}",
+                     ".manga-detail .description .category {",
+                     "    border: none !important;",
+                     "    border-radius: 3px!important;",
+                     "    box-shadow: 6px 6px 25px -6px #000!important;",
+                     "    background: linear-gradient(141deg,#1b76ac 10%,#00acc3 60%)!important;",
+                     "    transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity;",
+                     "    display: inline;",
+                     "    padding: 2px 5px;",
+                     "}",
+                     ".manga-detail .description .category a {",
+                     "    color: #ffffff !important;",
+                     "}",
+                     ".manga-detail .description .translater {",
+                     "    border: none!important;",
+                     "    border-radius: 3px!important;",
+                     "    box-shadow: 6px 6px 25px -6px #000!important;",
+                     "    transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity;",
+                     "    background: linear-gradient(141deg,#3A3897 10%,#A3A1FF 200%)!important;",
+                     "    display: inline;",
+                     "    padding: 2px 5px !important;",
+                     "}",
+                     ".manga-detail .description .translater a {",
+                     "    color: white !important;",
+                     "}",
+                     ".manga-detail .description .like-buttons>.item {",
+                     "    font-weight: bold;!important",
+                     "    padding: 3px 5px!important;",
+                     "    margin: -5px 0 0 5px!important;",
+                     "    background-color: #78daf6!important;",
+                     "    -webkit-border-radius: 3px!important;",
+                     "    background: linear-gradient(141deg,#124784 10%,#4179a4 60%)!important;",
+                     "    border: none;!important",
+                     "    cursor: pointer;",
+                     "    display: inline-block;",
+                     "        box-shadow: 6px 6px 25px -6px #000!important;",
+                     "}",
+                     ".manga-detail .description .like-buttons > .item.wrap-download-all {",
+                     "    border: none;!important",
+                     "    background: linear-gradient(141deg,#124784 10%,#4179a4 75%)!important;",
+                     "        box-shadow: 6px 6px 25px -6px #000!important;",
+                     "}",
+                     "span.comic-btn-download-all{",
+                     "    color: #fff; !important!important",
+                     "}",
+                     ".color-fuchsia {",
+                     "    color: #fff!important;",
+                     "    border: none!important;",
+                     "    border-radius: 3px!important;",
+                     "    box-shadow: 6px 6px 25px -6px #000!important;",
+                     "    background: linear-gradient(141deg,#006fb1 10%,#2d4e86 60%)!important;",
+                     "    transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity;",
+                     "    display: inline;",
+                     "    padding: 2px 5px;",
+                     "}",
+                     ".color-hotpink {",
+                     "    color: #fff!important;",
+                     "    border: none!important;",
+                     "    border-radius: 3px!important;",
+                     "    box-shadow: 6px 6px 25px -6px #000!important;",
+                     "    background: linear-gradient(141deg,#006fb1 10%,#2d4e86 60%)!important;",
+                     "    transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity;",
+                     "    display: inline;",
+                     "    padding: 2px 5px;",
+                     "}",
+
+
+
+
+
+
                      "body {",
                      "    background: #6e7274 url(http://farm5.staticflickr.com/4216/35079800750_f3b86d6449_o.jpg) center top fixed repeat;",
                      "    background-size: cover !important;",
@@ -34,9 +127,6 @@
                      "    background: #fff url(http://farm5.staticflickr.com/4585/38480158626_4f540b87be_o.jpg) center top fixed repeat;",
                      "    background-size: cover !important;",
                      "}",
-                     "a[style] {",
-                     "    display: none;",
-                     "}",
                      "#mota h1 {",
                      "    color: #fff",
                      "}",
@@ -44,6 +134,9 @@
                      "    color: #fff",
                      "}",
                      "body {",
+                     "    color: rgb(255, 255, 255);",
+                     "}",
+                     "a:hover {",
                      "    color: rgb(255, 255, 255);",
                      "}",
                      "#menu {",
@@ -166,7 +259,7 @@
                      "    color: #ffffff;",
                      "}",
                      ".manga-detail {",
-                     "    background: rgba(166, 224, 255, 0.46);",
+                     "    background: rgba(166, 247, 255, 0.19);",
                      "}",
                      ".color-u-2 {",
                      "    color: #7b00d6;",
@@ -258,10 +351,15 @@
                      "div.c-content {",
                      "    background: #2f333569;",
                      "}",
+                     "img[src*=\"http://3.bp.blogspot.com/-SClhoA8I_sI/TxOkLKBnS8I/AAAAAAAAAH0/HS4apVPTu1c/w50-c/\"] {",
+                     "    content: url(https://1.bp.blogspot.com/-4dIRJIVOprs/WhYFXF7tL8I/AAAAAAAA-M0/ldOLTqtmoD4jX5WS_EH0Uj3NQeYTeQFxACHMYCw/s50-c/63176628_p0.png);",
+                     "    height: 56px;",
+                     "    width: 56px;",
+                     "}",
                      "img[src*=\"http://3.bp.blogspot.com/-SClhoA8I_sI/TxOkLKBnS8I/AAAAAAAAAH0/HS4apVPTu1c/s50-c/\"] {",
-                     "    content: url(http://www.ani-vn.com/img/gallery-images/54739325_p1%20-%20snow%20miku2014~2016.png);",
-                     "    height: 58px;",
-                     "    width: 58px;",
+                     "    content: url(https://1.bp.blogspot.com/-4dIRJIVOprs/WhYFXF7tL8I/AAAAAAAA-M0/ldOLTqtmoD4jX5WS_EH0Uj3NQeYTeQFxACHMYCw/s50-c/63176628_p0.png);",
+                     "    height: 56px;",
+                     "    width: 56px;",
                      "}",
                      "iframe[src*=\"https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fblogtruyen.page%2F&tabs=timeline%2Cmessages&width=280&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1092402354157500\"] {",
                      "    display: none;",
@@ -474,380 +572,251 @@
                      document.documentElement.appendChild(node);
                  }
              }
+
+             //============= Thêm Class nguyenvancaoky  =================
+
+             $(document).ready(function(nguyenvancaoky){
+                 $("a[data-original-title|='Username: taolataodays2']").addClass("nguyenvancaoky");});
+
+             //=============        Thêm Credit         =================
+
+             $(document).ready(function(mota){
+                 var x = document.getElementById("mota");
+                 x.querySelector("h1").innerHTML = '<a style="padding: 6px 6px 6px 6px; text-decoration: none; background: linear-gradient(141deg, #312A6C 10%, #852D91 75%)!important; border: none!important; border-radius: 3px!important; box-shadow: 6px 6px 25px -6px #3AA17E!important; transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity; color: white !important;">Giao diện được thiết kế lại bởi " Nguyễn Văn Cao Kỳ " </a>';
+             });
+             $(document).ready(function(mota){
+                 var x = document.getElementById("mota");
+                 x.querySelector("span").innerHTML = '<a href="https://facebook.com/nguyenvancaoky" style="padding: 6px 6px 6px 6px; text-decoration: none; background: linear-gradient(141deg, #00537E 0, #3AA17E 75%)!important; border: none!important; border-radius: 3px!important; box-shadow: 6px 6px 25px -6px #3AA17E!important; transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity; color: white !important;">Facebook</a> <a style="padding: 6px 6px 6px 6px; text-decoration: none; border: none!important; border-radius: 3px!important; box-shadow: 6px 6px 25px -6px #3AA17E!important; background: linear-gradient(141deg, #662D8C 0, #ED1E79 75%)!important; transition: .8s cubic-bezier(.08, .52, .52, 1) background, .4s cubic-bezier(.08, .52, .52, 1) opacity; color: white !important;" href="https://facebook.com/nguyenvancaoky" >fb.me/nguyenvancaoky</a> ';
+             });
+
+             //=============        Hiển thị ảnh preview tại list truyện         =================
+
+             setInterval(function(){
+                 var tiptip = document.getElementsByClassName('tiptip');
+                 Array.prototype.forEach.call(tiptip, function(el) {
+                     var id = el.dataset.tiptip;
+                     var content = document.getElementById(id).cloneNode(true);
+                     if(content.className.indexOf('hidden') > -1) {
+                         content.className = content.className.replace('hidden', '');
+                         content.style.padding = '10px';
+                         var title = content.getElementsByClassName("bold al-c fs-12")[0];
+                         if(title) {
+                             title.parentElement.removeChild(title);
+                             el.parentElement.appendChild(content);
+                         }
+                     }
+                 });
+             });
+
+             //=============        Thêm chức năng trở về đầu&cuối trang         =================
+
+             (function(window,document){
+
+                 function addEvent(obj, type, fn){
+                     return obj.addEventListener ?
+                         obj.addEventListener(type, function(e){
+                         var ev = window.event ? window.event : (e ? e : null);
+                         ev.target = ev.target || ev.srcElement;
+                         if( fn.call(obj,ev)===false ){
+                             e.cancelBubble = true;
+                             e.preventDefault();
+                         }
+                     }, false)
+                     :
+                     obj.attachEvent('on' + type, function(e){
+                         var ev = window.event ? window.event : (e ? e : null);
+                         ev.target = ev.target || ev.srcElement;
+                         if(fn.call(obj,ev)===false ){
+                             e.cancelBubble = true;
+                             return false;
+                         }
+                     });
+                 }
+
+                 function getSize(obj) {
+                     return document.documentElement[obj] !== 0 ? document.documentElement[obj] : document.body[obj];
+                 }
+
+                 function hasScroll() {
+                     return getSize('scrollHeight') > getSize('clientHeight') ? true : false;
+                 }
+
+                 function getStyle(obj, attr) {
+                     return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];
+                 }
+
+                 function $(id) {
+                     return document.getElementById(id);
+                 }
+                 function animate(obj,json,cfgjson){
+                     clearInterval(obj.animate);
+                     obj.animate = setInterval(function() {
+                         var bStop = true;
+                         for(var attr in json){
+                             var objAttr = 0 ;
+                             if(attr == 'opacity'){
+                                 objAttr = Math.round(parseFloat( getStyle(obj,attr) ) * 100);
+                             }else if( attr=="scrollTop" ){
+                                 objAttr = parseInt( getSize("scrollTop") );
+                             }
+                             else{
+                                 objAttr = parseInt( getStyle(obj,attr) );
+                             }
+                             var jsonattr = parseFloat( json[attr] );
+                             var speedConfig = (cfgjson && typeof ( cfgjson.speed ) != 'undefined') ? cfgjson.speed : 10;
+                             var iSpeed = (jsonattr - objAttr) / speedConfig;
+                             iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+                             if ( (iSpeed>0 && objAttr <= jsonattr) || (iSpeed<0 && objAttr >= jsonattr) ) {
+                                 bStop = false;
+                             }
+                             if (attr == "opacity") {
+                                 obj.style.filter = 'alpha(opacity:' + (objAttr + iSpeed) + ')';
+                                 obj.style.opacity = (objAttr + iSpeed) / 100;
+                             }else if(attr == "scrollTop"){
+                                 document.documentElement.scrollTop=document.body.scrollTop = objAttr+iSpeed;
+                             }
+                             else {
+                                 obj.style[attr] = objAttr + iSpeed + 'px';
+                             }
+                             if (bStop) {
+                                 clearInterval(obj.animate);
+                                 if( cfgjson && typeof cfgjson.endFn != 'undefined' ){
+                                     cfgjson.endFn.call(obj);
+                                 }
+                             }
+                         }//for
+                     },20);
+                 }
+                 var cssText = '#scrollMars-troy{position:fixed;right:30px;z-index:9999999}#scrollMars-troy #mars-point{width:100px;height:100px;position:absolute;top:0;left:-40px}#scrollMars-troy div div.sroll-btn-troy{width:50px;height:50px;text-align:center;background:#303030;color:#fff;display:block;opacity:0.8;filter:alpha(opacity=80);cursor:pointer;border-radius:50%;box-shadow:2px 2px 40px 2px #303030;line-height:50px;font-size:35px;font-style:inherit;font-weight:bold;font-family:"宋体"}#scrollMars-troy div div.sroll-btn-troy:hover{background:#FF0000}';
+                 GM_addStyle(cssText);
+                 function scroll(dir) {
+                     var position,speed,scrollTop,scrollHeight,clientHeight;
+                     clearInterval(document.timerScroll);
+                     scrollHeight = getSize('scrollHeight');
+                     clientHeight = getSize('clientHeight');
+                     document.timerScroll = setInterval(function() {
+                         scrollTop = getSize('scrollTop');
+                         if (dir > 0) {
+                             speed = ( scrollTop/10 ) + 1;
+                             position = scrollTop - speed;
+                             if (position <= 0) {
+                                 document.body.scrollTop = document.documentElement.scrollTop = 0;
+                                 clearInterval(document.timerScroll);
+                             }
+                         } else {
+                             speed = ( (scrollHeight-scrollTop-clientHeight) / 10 ) + 1;
+                             position = scrollTop + speed;
+                             if (position + clientHeight >= scrollHeight) {
+                                 document.body.scrollTop = document.documentElement.scrollTop = scrollHeight;
+                                 clearInterval(document.timerScroll);
+                             }
+                         }
+                         document.body.scrollTop = document.documentElement.scrollTop = position;
+                     }, 20);
+                 }
+
+                 function marsMove(dir){
+                     var mars = $('scrollMars-troy');
+                     var point = $('mars-point');
+                     if(dir=="moveIn"){
+                         clearTimeout(mars.timerHover);
+                         animate(mars,{"right":"30","opacity":"100"});
+                         animate(point,{"left":"0"});
+                     }else if(dir=="moveOut"){
+                         clearTimeout(mars.timerHover);
+                         mars.timerHover = setTimeout(function(){
+                             animate(mars,{"right":"-30","opacity":"30"});
+                             animate(point,{"left":"-40"});
+                         },3000);
+                     }
+                 }
+
+                 function init() {
+                     var scrollBtn = $("scrollMars-troy");
+                     if( scrollBtn ){
+                         scrollBtn.style.top = (getSize('clientHeight') / 3) + 'px';
+                     }
+                     if (hasScroll() === true && !scrollBtn) {
+                         var mars = document.createElement('div'),goTop,goBtm,point;
+                         mars.id = "scrollMars-troy";
+                         window.top.document.documentElement.appendChild(mars);
+                         mars.innerHTML =
+                             '<div id=\'mars-point\'></div>'+
+                             '<div>'+
+                             '    <div id=\'goTop-troy\' title=\'Lên đầu trang\' class=\'sroll-btn-troy\'></div>'+
+                             '    <div id=\'goBtm-troy\' title=\'Xuống cuối trang\' class=\'sroll-btn-troy\'></div>'+
+                             '</div>';
+                         goTop = $("goTop-troy");
+                         goBtm = $("goBtm-troy");
+                         goTop.innerHTML = "↑";
+                         goBtm.innerHTML = "↓";
+                         $('scrollMars-troy').style.top = (getSize('clientHeight') / 3) + 'px';
+                         addEvent(goTop, "click", function() {
+                             scroll(1);
+                             return false;
+                         });
+                         addEvent(goBtm, "click", function() {
+                             scroll(-1);
+                             return false;
+                         });
+                         addEvent(mars,'mouseover',function(){
+                             marsMove("moveIn");
+                             return false;
+                         });
+                         addEvent(mars,'mouseout',function(){
+                             marsMove("moveOut");
+                             return false;
+                         });
+                         addEvent(mars,'mousedown',function(){
+                             return false;
+                         });
+                         marsMove("moveOut");
+                     }
+                 }
+
+                 addEvent(window,"mousewheel",function(){
+                     clearInterval(document.timerScroll);
+                 });
+                 addEvent(window,"DOMMouseScroll",function(){
+                     clearInterval(document.timerScroll);
+                 });
+                 addEvent(window.top, "resize", function() {
+                     init();
+                 });
+
+                 addEvent(document, 'DOMContentLoaded', function() {
+                     init();
+                 });
+                 //================    Cài đặt phím    ============
+                 addEvent(window, 'keydown', function(e) {
+                     if (e.keyCode == 38) {
+                         scroll(1);
+                     } else if (e.keyCode == 40) {
+                         scroll(-1);
+                     } else if (e.ctrlKey && e.altKey) {
+                         marsMove("moveIn");
+                     }
+                 });
+
+             })(window,document);
             })();
 
 
-//================PR============
 
 
-setInterval(function(){
-    var tiptip = document.getElementsByClassName('tiptip');
-    Array.prototype.forEach.call(tiptip, function(el) {
-        var id = el.dataset.tiptip;
-        var content = document.getElementById(id).cloneNode(true);
-        if(content.className.indexOf('hidden') > -1) {
-            content.className = content.className.replace('hidden', '');
-            content.style.padding = '10px';
-            var title = content.getElementsByClassName("bold al-c fs-12")[0];
-            if(title) {
-                title.parentElement.removeChild(title);
-                el.parentElement.appendChild(content);
-            }
-        }
-    });
-});
-
-//================PR============
 
 
-function checkList() {
-	if (GM_getValue(window.top.location.host, '不在黑名单中') == window.top.location.host) { //如果该页面在黑名单中，则不执行
-		return true;
-	};
-};
-//================公共函数区============
 
-function addEvent(obj, event, fn) {
-	return obj.addEventListener ? obj.addEventListener(event, fn, false) : obj.attachEventListener("on" + event, fn);
-};
 
-function getSize(obj) {
-	return document.documentElement[obj] != 0 ? document.documentElement[obj] : document.body[obj];
-}
 
-function hasScroll() {
-	return getSize('scrollHeight') > getSize('clientHeight') ? true : false;
-};
 
-function getStyle(obj, attr) {
-	return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];
-}
 
-function $(id) {
-	return document.getElementById(id);
-}
 
-function doMove(obj, attr, dir, target, endFn) {
-	dir = parseInt(getStyle(obj, attr)) < target ? dir : -dir;
-	clearInterval(obj.timer);
-	obj.timer = setInterval(function() {
-			var speed = parseInt(getStyle(obj, attr)) + dir;
-			if (speed > target && dir > 0 || speed < target && dir < 0) {
-				speed = target;
-			};
-			obj.style[attr] = speed + "px";
-			if (speed == target) {
-				clearInterval(obj.timer);
-				endFn && endFn();
-			};
-		},
-		30);
-};
-//================样式区============
-var cssText = '\
-#scrollMars-troy{\
-	position:fixed !important;\
-	right:30px;\
-	z-index:9999999 !important;\
-}\
-\
-.sroll-btn-troy{\
-	width:50px !important;\
-	height:50px !important;\
-	text-align:center !important;\
-	background:#303030 !important;\
-	color:#fff !important;\
-	display:block !important;\
-	opacity:0.8 !important;\
-	fitter:alpha(opacity:80) !important;\
-	cursor:pointer !important;\
-	border-radius:50% !important;\
-	box-shadow:2px 2px 40px 2px #303030 !important;\
-	line-height:50px !important;\
-	font-size:35px !important;\
-	font-style:inherit !important;\
-	font-weight:bold !important;\
-	font-family:"宋体" !important;\
-}\
-#scrollMars-troy>div>div:hover{\
-	background:#FF0000 !important;\
-}\
-#mars-point{\
-	width:100px !important;\
-	height:100px !important;\
-	position:absolute !important;\
-	top:0 !important;\
-	left:-40px !important;\
-}\
-#setting-troy{\
-	width: 300px !important;\
-	height: auto !important;\
-	border: 2px solid #303030 !important;\
-	position: fixed !important;\
-	top: 200px !important;\
-	left: 33% !important;\
-	color: #fff !important;\
-	background: #303030 !important;\
-	z-index:9999999999 !important;\
-}\
-#setting-troy>div{\
-	margin: 20px !important;\
-}\
-#setting-troy>div input{\
-	color:#fff !important;\
-	background:#303030 !important;\
-	padding:5px !important;\
-	margin:5px !important;\
-}\
-#percent{\
-	position:absolute !important;\
-	top:42px !important;\
-	left:-20px;\
-	color:#147474 !important;\
-	font-family:"微软雅黑" !important;\
-	font-size:16px !important;\
-	line-height:16px !important;\
-}\
-'
-GM_addStyle(cssText);
-//================主要代码区============
-GM_getValue("turn") ? GM_setValue("turn", true) : GM_setValue("turn", GM_getValue("turn"));
 
-function readmode(speed, inteval, endFn) {
-	if (!$('percent') || GM_getValue("turn") == false || createBtn() == false) {
-		return;
-	}
-	clearInterval(document.readMode);
-	document.readMode = setInterval(function() {
-		var position = getSize('scrollTop') + speed;
-		document.body.scrollTop = document.documentElement.scrollTop = position;
-		clearTimeout(document.showPercent);
-		var precent = parseInt(getSize('scrollTop') / (getSize('scrollHeight') - getSize('clientHeight')) * 100);
-		$('percent').style.display = "block";
-		$('percent').innerHTML = precent + '%';
-		if (position + getSize('clientHeight') >= getSize('scrollHeight')) { //如果滚到底部
-			clearInterval(document.readMode);
-			$('percent').style.display = "none";
-		}
-	}, inteval)
-	GM_setValue("turn", true);
-}
 
-function moveMars(obj, index) {
-	if (index == 'mouseout') {
-		clearTimeout(obj.timerHover);
-		obj.timerHover = setTimeout(function() {
-				doMove(obj, "right", 5, -30);
-			},
-			3000); //鼠标离开后，3s隐藏到边栏
-	} else if (index == 'mouseover') {
-		clearTimeout(obj.timerHover);
-		doMove(obj, "right", 5, 30);
-	}
-}
 
-function scroll(obj, dir) { //obj随意，dir>0往上滚，dir<0往下滚
-	clearInterval(obj.timerScroll);
-	clearInterval(document.readMode);
-	obj.timerScroll = setInterval(function() {
-		var position;
-		if (dir > 0) { //往上滚动
-			var speed = (getSize('scrollTop') / 10) + 10;
-			position = getSize('scrollTop') - speed;
-			if (position <= 0) { //如果滚到顶部
-				document.body.scrollTop = document.documentElement.scrollTop = 0;
-				clearInterval(obj.timerScroll);
-			}
-		} else { //往下滚动
-			var speed = ((getSize('scrollHeight') - getSize('scrollTop')) / 20) + 10;
-			position = getSize('scrollTop') + speed;
-			if (position + getSize('clientHeight') >= getSize('scrollHeight')) { //如果滚到底部
-				document.body.scrollTop = document.documentElement.scrollTop = getSize('scrollHeight');
-				clearInterval(obj.timerScroll);
-			}
-		}
-		document.body.scrollTop = document.documentElement.scrollTop = position;
-	}, 20)
-}
 
-function createBtn() {
-	if (checkList() == true) {
-		return false;
-	}
-	var jugg = $("scrollMars-troy");
-	if (jugg && hasScroll() == true) { //如果有滚动条,并且存在滚动按钮
-		$('scrollMars-troy').style.top = (getSize('clientHeight') / 3) + 'px'; //调整按钮位置
-	} else if (jugg && hasScroll() == false) { //如果没有滚动条，但是有按钮
-		jugg.remove(jugg); //删除按钮
-	};
-	if (hasScroll() == false && !jugg) { //如果没有滚动条,并且没有按钮
-		return false;
-	} else if (hasScroll() == true && !jugg) { //如果有滚动条，并且没有按钮
-		var mars = document.createElement('div');
-		mars.id = "scrollMars-troy";
-		window.top.document.documentElement.appendChild(mars);
-		mars.innerHTML = "\
-		<div id='percent'></div>\
-		<div id='mars-point'></div>\
-		<div>\
-			<div id='goTop-troy' title='返回顶部' class='sroll-btn-troy'></div>\
-			<div id='goBtn-troy' title='去到底部' class='sroll-btn-troy'></div>\
-		</div>\
-		";
-		$('scrollMars-troy').style.top = (getSize('clientHeight') / 3) + 'px';
-		$("goTop-troy").innerHTML = "↑";
-		$("goBtn-troy").innerHTML = "↓";
-		addEvent($("goTop-troy"), "click", function() {
-			scroll(mars, 1)
-		});
-		addEvent($("goBtn-troy"), "click", function() {
-			scroll(mars, -1)
-		});
-		addEvent($("mars-point"), "mouseover", function(e) {
-			moveMars(mars, "mouseover");
-		});
-		addEvent($("mars-point"), "mouseout", function(e) {
-			moveMars(mars, "mouseout");
-		});
-		addEvent(mars, "mouseover", function() {
-			moveMars(mars, "mouseover")
-		});
-		addEvent(window, "resize", function() {
-			$('scrollMars-troy').style.top = (getSize('clientHeight') / 3) + 'px';
-		});
-		moveMars(mars, "mouseout"); //页面加载完成，默认3s后隐藏到边栏
-		return true;
-	};
-};
-//================执行区============
-addEvent(window, 'mousewheel', function() { //滚动则停止，兼容chrome/ie/opera
-	createBtn() && clearInterval($('scrollMars-troy').timerScroll);
-})
 
-addEvent(window, 'DOMMouseScroll', function() { //滚动则停止，兼容firefox
-	createBtn() && clearInterval($('scrollMars-troy').timerScroll);
-})
 
-addEvent(document, 'dblclick', function(event) { //双击进入阅读模式
-	var type = /input|form|textarea|img|a|li|object|video|audio/ig;
-	event = event || window.event;
-	var macType = type.test(event.target.nodeName);
-	if (macType) {
-		return;
-	};
-	readmode(1, 20);
-})
 
-addEvent(document, 'click', function() { //单击退出阅读模式
-	if ($('percent')) {
-		clearInterval(document.readMode);
-		$('percent').style.display = "none";
-	}
-})
 
-addEvent(window.top, "resize", function() { //页面大小改变，初始化按钮
-	createBtn();
-});
-addEvent(document, 'DOMContentLoaded', function() {
-	createBtn();
-})
-//================快捷键区============
-addEvent(window, 'keydown', function(event) {
-	event = event || window.event;
-	if (event.keyCode == 38) { //alt+1，向上滚动
-		scroll($('scrollMars-troy'), 1)
-	} else if (event.keyCode == 40) { //alt+2，向下滚动
-		scroll($('scrollMars-troy'), -1)
-	} else if (event.ctrlKey && event.altKey) { //ctrl+alt,调出按钮
-		moveMars($('scrollMars-troy'), "mouseover");
-		setTimeout(function() {
-			moveMars($('scrollMars-troy'), "mouseout");
-		}, 3000);
-	} else if (event.keyCode == 27) { //Esc退出控制面板
-		var setting = $('setting-troy');
-		setting　 && 　setting.remove(setting);
-	} else if (event.ctrlKey && event.keyCode == 113) { //ctrl+F2，调处控制面板
-		$('setting-troy') && 　setting.remove(setting);
-		var setting = document.createElement('div');
-		setting.id = 'setting-troy';
-		var inner = "\
-			<div id='setting-pan-troy'>\
-				<div>\
-					控制面板:Ctrl+F2<br />\
-					添加黑名单域名：<input type='text' id='blackList' placeholder='www.baidu.com' /><br />\
-					<input type='button' value='添加黑名单' id='saveSetting' />\
-					<input type='button' id='quiet' value='退出面板(Esc)' /><br/><hr />\
-					<input type='button' id='clear' value='移除黑名单'>\
-					<input type='button' id='showlist' value='显示黑名单'>\
-					<input type='button' id='clearall' value='清空黑名单'>\
-					<input type='button' id='readmodebtn' value='双击滚动开关'>\
-				</div>\
-			</div>\
-		"
-		window.top.document.documentElement.appendChild(setting);
-		setting.innerHTML = inner;
-		//var domian=/^[0-9-a-z]{0,}\.{0,1}[0-9-a-z]+\.{0,1}[a-z]{0,}\.{1}[a-z]+$/ig;//用于验证域名是否符合规范
-		var domian = /^[0-9a-zA-Z]+[0-9a-zA-Z\.-]*\.[a-zA-Z]{2,4}$/;
-		var host = window.top.location.host;
-		$('blackList').value = host;
-		//GM_setValue("turn",true);//第一次安装脚本，默认开启双击滚动
-		addEvent($('quiet'), 'click', function() { //退出
-			setting.remove(setting);
-		});
-		addEvent($('clear'), 'click', function() { //移出黑名单
-			alert(GM_getValue($('blackList').value, '未获取') + "：移除成功");
-			GM_deleteValue($('blackList').value);
-		});
-		addEvent($('clearall'), 'click', function() { //清空黑名单
-			for (var i = 0; i < GM_listValues().length; i++) {
-				if (domian.test(GM_listValues()[i]) == true) {
-					console.log('黑名单：' + GM_listValues()[i] + '被删除');
-					GM_deleteValue(GM_listValues()[i]);
-				}
-			}; //for
-			alert('清空完毕,\nBug:可能需要多点几次，才能清空');
-		})
-		addEvent($('showlist'), 'click', function() { //显示黑名单
-			if (GM_listValues().length <= 1) {
-				alert('空的黑名单');
-				return;
-			} else {
-				for (var i = 0; i < GM_listValues().length; i++) {
-					if (domian.test(GM_listValues()[i]) == true) {
-						var list = document.createElement('li');
-						list.innerHTML = GM_listValues()[i];
-						document.querySelector('#setting-pan-troy>div').appendChild(list);
-					}
-				} //for
-			}
-		});
-		addEvent($('readmodebtn'), 'click', function() { //禁用双击滚动
-			console.log("当前状态：" + GM_getValue("turn"), "空的变量");
-			if (GM_getValue("turn") == true) {
-				GM_setValue("turn", false);
-				alert('开关状态：' + GM_getValue("turn") + '，禁用成功');
-				return;
-			} else if (GM_getValue("turn") == false) {
-				GM_setValue("turn", true);
-				alert('开关状态：' + GM_getValue("turn") + '，开启成功');
-				return;
-			}
-		})
-		addEvent($('saveSetting'), 'click', function() { //保存
-			if (domian.test($('blackList').value) == false) { //检查输入的域名是否符合规范
-				alert($('blackList').value + '域名格式不正确' + '\n比如：tieba.baidu.com或www.baidu.com')
-				return;
-			} else if ($('blackList').value != '') { //如果有填入黑名单列表
-				if (GM_getValue($('blackList').value, '不存在这个黑名单') != $('blackList').value) { //不在黑名单中
-					GM_setValue($('blackList').value, $('blackList').value);
-					alert('禁用：' + $('blackList').value + '成功');
-				} else {
-					alert('该域名已在黑名单中');
-				}
-			} else { //没有填入黑名单
-				alert('请输入域名');
-				return;
-			}
-		})
-	}
-}) //监听keydown，快捷键
