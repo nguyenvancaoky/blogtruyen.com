@@ -10,6 +10,10 @@
 // @include       http://*.blogtruyen.com/*
 // @include       https://*.blogtruyen.com/*
 // @include       http://id.blogtruyen.com*
+// @exclude       http://forum.blogtruyen.com/*
+// @exclude       https://forum.blogtruyen.com/*
+// @exclude       http://blogtruyen.com/truyen-theo-doi/*
+// @exclude       https://blogtruyen.com/truyen-theo-doi/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @grant       GM_addStyle
 // @grant       GM_getValue
