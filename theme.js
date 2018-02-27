@@ -14,6 +14,8 @@
 // @exclude       https://forum.blogtruyen.com/*
 // @exclude       http://blogtruyen.com/truyen-theo-doi/*
 // @exclude       https://blogtruyen.com/truyen-theo-doi/*
+// @exclude       http://id.blogtruyen.com/thanh-vien*
+// @exclude       https://id.blogtruyen.com/thanh-vien*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @grant       GM_addStyle
 // @grant       GM_getValue
