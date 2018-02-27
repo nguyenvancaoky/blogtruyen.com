@@ -25,6 +25,7 @@
 // @compatible  firefox
 // @license     The MIT License (MIT); http://opensource.org/licenses/MIT
 // @version       1.7
+// @downloadURL  https://raw.githubusercontent.com/nguyenvancaoky/blogtruyen.com/master/theme.js
 // ==/UserScript==
 
 //==========     Bắt đầu css   ==============
