@@ -1,4 +1,4 @@
 {
-"User":[ "admin", "phamhau", "myfriend1" ],
+"User":[ "admin", "phamhau", "vutuananh" ],
 "Pass":[ "ANI-PC", "DESKTOP-K9JGHAV", "ADMNS" ]
 }
