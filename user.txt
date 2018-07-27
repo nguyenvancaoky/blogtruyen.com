@@ -1,4 +1,4 @@
 {
-"User":[ "admin", "phamhau", "vutuananh", "pubg0365" ],
-"Pass":[ "ANI-PC", "DESKTOP-K9JGHAV", "TUANANH", "MQ9K2HZBI7GUIHU" ]
+"User":[ "admin", "phamhau", "vutuananh", "pubg0365", "ky" ],
+"Pass":[ "ANI-PC", "DESKTOP-K9JGHAV", "TUANANH", "MQ9K2HZBI7GUIHU", "ANI-PC" ]
 }
