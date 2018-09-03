@@ -27,7 +27,6 @@
 // @compatible  firefox
 // @license     The MIT License (MIT); http://opensource.org/licenses/MIT
 // @version       1.7
-// @downloadURL  https://raw.githubusercontent.com/nguyenvancaoky/blogtruyen.com/master/theme.js
 // ==/UserScript==
 
 //==========     Bắt đầu css   ==============
@@ -149,6 +148,9 @@
                      "}",
                      "#menu {",
                      "    background: rgba(82, 182, 243, 0.51);",
+                     "}",
+                     "#banner {",
+                     "    display: none;",
                      "}",
                      ".list-mainpage .storyitem footer {",
                      "    background: rgba(69, 194, 255, 0.64);",
@@ -393,7 +395,7 @@
                      "    background: #ffffff;",
                      "}",
                      "article#content img:first-child:hover {",
-                     "    content: url(http://www.ani-vn.com/img/credit.jpg);",
+                     "    content: url(http://farm1.staticflickr.com/848/42086871840_be729b5ded_o.jpg);",
                      "}",
                      "#readonline .breadcrumbs a:first-child span:first-child {",
                      "    padding: 6px 6px 6px 6px;",
