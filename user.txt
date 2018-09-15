@@ -24,7 +24,8 @@
         "14/10/2018",
         "#",
         "#",
-        "15/10/2018"
+        "15/10/2018",
+        "15/9/2018"
     ],
     "Pass": [
         "ANI-PC",
@@ -51,7 +52,8 @@
         "DESKTOP-D0I7JCF",
         "LAPTOP-K894PNDL",
         "DESKTOP-SLNDDHO",
-        "ANHNGHIAPC-PC"
+        "ANHNGHIAPC-PC",
+        "May13"
     ],
     "User": [
         "admin",
@@ -78,6 +80,7 @@
         "30x4545668F456",
         "MohamdKing",
         "31352F392F6467",
-        "30x564465F4B"
+        "30x564465F4B",
+        "30x5566AFB"
     ]
 }
